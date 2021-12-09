@@ -1,0 +1,30 @@
+.contacts-item {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 18vw;
+  margin: 1.042vw 0;
+  @media(max-width: 433px) {
+    justify-content: flex-end;
+width: 100%;
+margin: 1.7vw 0;
+  }
+
+  p {
+    text-align: end;
+    font-size: 1.4vw;
+    margin-right: 1vw;
+    @media(max-width: 433px) {
+font-size: 4.4vw;
+margin-right: 5vw;
+    }
+  }
+  .icon{
+    @media(max-width: 433px){
+        display: flex;
+align-items: center;
+justify-content: center;
+    }
+
+  }
+}
