@@ -2,13 +2,14 @@ import React from 'react';
 import './contacts.scss';
 import Icons from "./Icons";
 
-const Contacts = () => {
+const Contacts = ({language}) => {
     const contactItemData = [
         {text:'1997.06.08',icon:<Icons smile/>},
-        {text:'Актобе, Казахстан',icon:<Icons map/>},
+        {text:language?'Актобе, Казахстан':'Aqtobe, Kazakhstan',icon:<Icons map/>},
         {text:'crazynihonjin97@gmail.com',icon:<Icons email/>},
         {link:'@Rafael_RFL',icon:<Icons telegramm/>}
     ]
+
     return (
         <>
             {contactItemData.map((item,i)=>(

@@ -11,13 +11,12 @@ import Contacts from "../contacts/contacts";
 //
 //     }
 
-const Hero = () => {
-
+const Hero = ({engBollean}) => {
     return (
         <main>
-            <h1>Рафаэль Насыбуллин</h1>
-            <h5>Frontend разработчик</h5>
-            <Contacts/>
+            <h1>{engBollean?'Рафаэль Насыбуллин':'Rafael Nassybullin'}</h1>
+            <h5>{engBollean?'Фронтенд разработчик':'Frontend Developer'}</h5>
+            <Contacts language={engBollean}/>
             <div className="mid-border">
             </div>
         </main>
